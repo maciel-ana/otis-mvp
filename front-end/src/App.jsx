@@ -4,6 +4,7 @@ import './styles/app.css';
 import Form from './components/forms.jsx';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Link } from 'react-router-dom';
 
 const API_URL = "http://localhost:8800/api/elevadores";
 
@@ -137,8 +138,9 @@ function App() {
       <header>
         <h4 className='logo'>OTIS</h4>
         <h4 className='instalacoes'>Gerenciamento de instalações</h4>
-        <a className='dash'>Dashboard</a>
-        <a className='feedback'>Feedback</a>
+        <Link to="#" className='dash'>Dashboard</Link>
+        <Link to="/" className='instalacoes-app'>Instalações</Link>
+        <Link to="/feedback" className='feedback'>Feedback</Link>
       </header>
       <div className='container'>
         <div className="resgistro">

@@ -8,7 +8,6 @@ body {
     background-color: #F0F2F5;
 }
 
-
 header {
     display: flex;
     align-items: baseline;
@@ -38,14 +37,21 @@ header {
     color: #2D3748;
 }
 
+.dash,
+.feedback,
+.instalacoes-app {
+    text-decoration: none;
+}
+
 .dash:hover,
 .feedback:hover {
     color: #041E42;
 }
 
-.instalacoes {
+.instalacoes-app {
     font-weight: 600;
     font-size: 17px;
+    color: #005A9C;
 }
 
 .container {

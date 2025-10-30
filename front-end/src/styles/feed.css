@@ -15,9 +15,18 @@ body {
 }
 
 .feed-feedback {
-    color: #1173D4;
+    color: #2D3748;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
+}
+
+.feed-instalacoes.active,
+.feed-feedback.active,
+.dash.active {
+  color: #1173D4 !important;
+  font-weight: 700;
+  border-bottom: 3px solid #1173D4;
+  padding-bottom: 2px;
 }
 
 .feed-titulo {
@@ -71,7 +80,7 @@ body {
     border: 1px solid #CBD5E1;
     border-radius: 6px;
     padding: 10px 14px;
-    width: 80%;
+    width: 100%;
     font-size: 14px;
     color: #475569;
 }
@@ -198,4 +207,135 @@ body {
 .dropdown-item span {
     color: #64748B;
     font-size: 13px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1024px) {
+    .feed-titulo {
+        margin: 1.5em 0 1em 2em;
+    }
+
+    .feed-titulo h2 {
+        font-size: 1.75rem;
+    }
+
+    .feed-content-wrapper {
+        margin: 0 2em;
+        gap: 15px;
+    }
+
+    .container-feed {
+        padding: 25px;
+    }
+
+    .media-container {
+        padding: 30px;
+    }
+
+    .media-numero {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .feed-titulo {
+        margin: 1em 0 1em 1.5em;
+    }
+
+    .feed-titulo h2 {
+        font-size: 1.5rem;
+    }
+
+    .feed-content-wrapper {
+        flex-direction: column;
+        margin: 0 1.5em;
+        gap: 20px;
+    }
+
+    .container-feed {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .media-container {
+        flex: 1;
+        width: 100%;
+        padding: 25px;
+    }
+
+    .media-numero {
+        font-size: 3rem;
+    }
+
+    .btns {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .reset, .submit {
+        flex: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .feed-titulo {
+        margin: 1em 0 0.75em 1em;
+    }
+
+    .feed-titulo h2 {
+        font-size: 1.25rem;
+    }
+
+    .feed-content-wrapper {
+        margin: 0 1em;
+        gap: 15px;
+    }
+
+    .container-feed {
+        padding: 15px;
+        border-radius: 6px;
+    }
+
+    .form-group-feed input,
+    .form-group-feed textarea,
+    .form-group-feed select {
+        font-size: 16px; 
+    }
+
+    .media-container {
+        padding: 20px;
+        border-radius: 6px;
+    }
+
+    .media-container h3 {
+        font-size: 1rem;
+    }
+
+    .media-numero {
+        font-size: 2.5rem;
+    }
+
+    .media-container p {
+        font-size: 13px;
+    }
+
+    .btns {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .reset, .submit {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .dropdown-instalacoes {
+        max-height: 150px;
+    }
+
+    .dropdown-item {
+        padding: 10px;
+    }
 }
